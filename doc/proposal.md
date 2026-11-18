@@ -1,20 +1,24 @@
 **General Description of This Project**
 
-The data used from this project comes from the public database NCBI SRA. [Dataset](https://www.ncbi.nlm.nih.gov/sra/?term=SRR17703590)
+The data used from this project comes from the public database NCBI SRA. 
 
-Run Accession: SRR17703590	
+[Sample 1](https://www.ncbi.nlm.nih.gov/sra/?term=SRR17703590)
 
-Experiment Accession: SRX13866644
+[Sample 2](https://www.ncbi.nlm.nih.gov/sra/SRX13866638[accn])
+	
+Experiment Accession: PRJNA799360
 
-BioProject Accession: PRJNA799360 
+Sample 1 Accession: SAMN25159909  
 
-I will be working with raw reads from a RNA-seq data set. This RNA data set was dervied from a tomato infected with Meloidogyne incognita, commonly known as root-knot nematode. For my project in graduate school, I will be working with Meloidogyne incognita and I wanted to have practice working with this data. This data is paired end Illumina NextSeq 500 RNA-seq reads. There are 4.3 gigabases, and the size of the file is 1.4 Gb. This data was published on 2023-02-01. 
+Sample 2 Accession: SAMN25159907 
+
+I will be working with raw reads from a RNA-seq data set. This RNA data set was dervied from a tomato infected with Meloidogyne incognita, commonly known as root-knot nematode. Sample 1 consists of a tomato that has not been infected, or the control. Sample 2 represents RNA sequencing data of roots that have been infected. Both of these were taken 7 days after inoculation of the nematodes. For my project in graduate school, I will be working with Meloidogyne incognita and I wanted to have practice working with this data. This data is paired end Illumina NextSeq 500 RNA-seq reads. For sample 1 there are 4.3 gigabases, and the size of the file is 1.4 Gb. For sample 2, there are 5.6 gigabases, the size of the file is 1.9 Gb. This data was published on 2023-02-01.
 
 The output of the data will be a Go-Term Enrichment analysis, which is used to determine biological functions of a set of genes. Before the Go-Term Enrichment analysis, the raw reads will have to be trimmed and placed into count tables. While in the count tables, as the RNA-sequnecing data is a comparison between the infected and control tomato roots, a differential expression analysis can be performed to look at differences of RNA expression. After the differential expression is performed, the genes that show differing RNA expression levels will be put into a GO-Term Enrichment analysis in order to understand the biological function of the differing genes active or repressed in root-knot nematode infection. This is from a public database and I have access to the data.
 
 **Work Flow Steps**
 
-1.) Transfer the public data in OSC
+1.) Transfer the public data in OSC for both the control and 7 days post infection roots.
 
 2.) I will first use TrimGalore to trim down the FASTQ data
 
