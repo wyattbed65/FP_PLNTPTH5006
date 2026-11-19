@@ -37,7 +37,8 @@ The output of the data will be a Go-Term Enrichment analysis, which is used to d
 
 9.) Using downloaded packages (such as clusterProfiler) I will use the sorted table and perform a Gene Enrichment Analysis to determine biological function of these genes.
 
-All of these scripts will be performed using shell scripts in the form of a Slurm batch job. 
+All scripts before Salmon will be performed using shell scripts in the form of a Slurm batch job. 
+All of the scripts while generating the differential expression analysis and Go-Term Analysis will be performed using packages in R. 
 I will organize a distinct directory for each step, and the results will go into the specific directory related to the step. I do not plan to run a nf core-pipeline for this project. 
 
 **Uncertain Aspects of My Project**
